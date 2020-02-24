@@ -1,0 +1,21 @@
+
+<nav class="navbar navbar-default mb-3" style="background-color:yellow;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="/">Vidjot</a>
+            </div>
+            <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+        {{#if user}}
+                <li><a href="/about">About</a></li>
+                
+                <li><a href="/ideas">Ideas</a></li>
+                <li><a href="/ideas/add">Add</a></li>
+                <li><a href="/users/logout" >Logout</a></li>
+         {{else}}
+                <li> <a href="/users/register" >Register</a></li>
+                <li><a href="/users/login" >Login</a></li>
+        {{/if}}
+            </ul>
+        </div>
+    </nav>
